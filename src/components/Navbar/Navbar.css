@@ -1,0 +1,103 @@
+*::before {
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size: 1.6rem;
+}
+li {
+    list-style: none;
+}
+.brand  {
+    text-decoration: none;
+    color: #C1BFBF;
+}
+.nav{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-around;
+    height: 8vh;
+    background: #222222;
+}
+
+.nav ul{
+    list-style: none;
+    margin:0;
+}
+
+.nav ul li {
+    display: inline-block;
+	display:inline;
+	margin: 20px;
+}
+
+.nav ul li a:before,
+.nav ul li a:after{
+    transition: all .3s;
+}
+
+.nav ul li a:after{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: #F9FF9A;
+    height: 1px;
+    text-align: left;
+    content: '.';
+    opacity: 0;
+}
+
+.nav ul li a:hover:after{
+    width: 100%;
+}
+
+.nav ul li a {
+    transition: all 1s;
+    position: relative;
+}
+
+.nav ul li a:hover{
+    color: #F9FF9A;
+    z-index: 1;
+}
+.nav ul li a:hover:after{
+    z-index: -10;
+    animation: fill 1s forwards;
+    opacity: 1;
+}
+
+.nav__brand{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.nav__menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 3rem;
+}
+.nav__toggler div{
+    width: 2.5rem;
+    height: 0.2rem;
+    margin: 0.4rem;
+    background: darkgray;
+}
+.nav__toggler{
+    cursor: pointer;
+    display: none;
+}
+
+@media screen and (max-width: 768px){
+    .nav__toggler {
+         display: block;
+    }
+}
