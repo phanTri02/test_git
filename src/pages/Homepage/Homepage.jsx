@@ -12,7 +12,9 @@ import {FaUserGraduate} from 'react-icons/fa';
 
 const Homepage = () => {
     return (
+        
         <div className='homepage__detail'>
+            {/* <Navbar/> */}
             <Container fluid >
                 <Row>
                     <Carousel controls={false} fade interval={1000}> 
