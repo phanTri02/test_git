@@ -1,37 +1,45 @@
+* {
+    box-sizing: border-box;
+}
 
-li {
-    list-style: none;
+body {
+    margin: 0;
 }
-.brand  {
-    text-decoration: none;
-    color: #C1BFBF;
-}
-.nav{
+
+.header {
+    background-color: #fa7f67;
+    color: #ffffff ;
     display: flex;
-    position: relative;
-    align-items: center;
     justify-content: space-around;
-    height: 8vh;
-    background: #222222;
+    align-items: center;
+    gap: 2rem;
+    padding: 0 1rem;
 }
 
-.nav ul{
+.site-title {
+    font-size: 2rem;
+}
+
+
+.header ul {
+    padding: 0;
+    margin: 0;
     list-style: none;
-    margin:0;
+    display: flex;
+    gap: 1rem;
 }
 
-.nav ul li {
-    display: inline-block;
-	display:inline;
-	margin: 20px;
+.header a {
+    color: inherit;
+    padding: 10px;
+    text-decoration: none;
 }
 
-.nav ul li a:before,
-.nav ul li a:after{
-    transition: all .3s;
+.header ul li a:before {
+    transition: all .5s;
 }
 
-.nav ul li a:after{
+.header ul li a:after {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -40,55 +48,31 @@ li {
     width: 0%;
     content: '.';
     color: transparent;
-    background: #F9FF9A;
-    height: 1px;
+    background: #1e1e1f ;
+    height: 2px;
     text-align: left;
     content: '.';
     opacity: 0;
 }
 
-.nav ul li a:hover:after{
+.header ul li a:hover:after {
     width: 100%;
-}
-
-.nav ul li a {
-    transition: all 1s;
-    position: relative;
-}
-
-.nav ul li a:hover{
-    color: #F9FF9A;
-    z-index: 1;
-}
-.nav ul li a:hover:after{
     z-index: -10;
-    animation: fill 1s forwards;
+    animation: fill /1s forwards;
     opacity: 1;
 }
 
-.nav__brand{
-    text-transform: uppercase;
-    font-weight: bold;
-}
-.nav__menu{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    gap: 3rem;
-}
-.nav__toggler div{
-    width: 2.5rem;
-    height: 0.2rem;
-    margin: 0.4rem;
-    background: darkgray;
-}
-.nav__toggler{
-    cursor: pointer;
-    display: none;
+.header ul li a {
+    transition: all .5s;
+    position: relative;
 }
 
-@media screen and (max-width: 768px){
-    .nav__toggler {
-         display: block;
-    }
+.header ul li a:hover {
+    color: #1e1e1f;
+    z-index: 1;
+}
+
+.header ul li a:before,
+.header ul li a:after{
+    transition: all .3s;
 }
