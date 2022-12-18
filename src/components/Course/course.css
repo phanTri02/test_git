@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.app__banner {
+    display: flex;
+    text-align: start;
+    padding: 3em 6em;
+    height: fit-content;
+    width: 100vw;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.app__banner-text {
+    width: 60vw;
+    margin-top: 1em;
+}
+
+.banner__subtitle {
+    color: #FE753F;
+}
+
+.banner__subtitle span {
+    font-weight: 700;
+}
+
+.banner__title {
+    font-size: 60px;
+    font-weight: 800;
+    line-height: 1.3;
+    margin: 0.3em 0;
+}
+
+.banner__title span {
+    color: #FE753F;
+}
+
+.banner__desc {
+    color: #969696;
+    margin: 1em 0;
+}
+
+.banner__registerbutton {
+    padding: 0.5em 2em;
+    margin-top: 2em;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    background-color: #545BE8;
+}
+
+.app__banner-img {
+    width: 40vw;
+}
+
+.app__whatwegive {
+    display: flex;
+    text-align: start;
+    padding: 3em 6em;
+}
+
+.app__whatwegive__content {
+    
+}
+
+.whatwegive__title {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.whatwegive__desc {
+    font-size: 16px;
+    color: #969696;
+}
+
+.app__whatwegive__item {
+    display: flex;
+}
+
+.whatwegive__item {
+    display: flex;
+    flex-direction: column;
+    background-color: #FE753F;
+    padding: 2em 2em;
+    margin: 0 1em;
+    border-radius: 15px;
+}
+
+.whatwegive__item-icon {
+    background-color: white;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.whatwegive__item-title {
+    font-weight: 800;
+    color: white;
+    padding: 0.7em 0;
+}
+
+.whatwegive__item-desc {
+    color: #f0f0f0;
+}
+
+.app__selected {
+    background-color: #FE753F;
+    display: flex;
+    text-align: start;
+    color: white;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.app__selected-img {
+    width: 40vw;
+}
+
+.app__selected-img img {
+    width: 70%;
+}
+
+.app__selected-text {
+    width: 60vw;
+    margin-top: 1em;
+}
+
+.selected__subtitle {
+    font-size: 14px;
+    color: rgb(255, 229, 145);
+}
+
+.selected__title {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.selected__desc {
+    color: #fcfcfc;
+    margin: 1em 0;
+}
+
+.selected__testi {
+    display: flex;
+    margin-top: 2em;
+}
+
+.selected__testi-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.selected__testi-item:nth-child(2) {
+    margin: 0 7em;
+}
+
+.testi__item-title {
+    color: rgb(255, 229, 145);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.app__available {
+    display: flex;
+    text-align: start;
+    margin-top: 80px;
+    padding: 3em 6em;
+}
+
+.app__available-courses {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 3;
+}
+
+.app__available-desc {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.available__subtitle {
+    color: #FE753F;
+}
+
+.available__subtitle span {
+    font-weight: 700;
+}
+
+.available__title {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.available__title span {
+    color: #FE753F;
+}
+
+.available__desc {
+    color: #969696;
+    margin: 1em 0;
+}
+
+.available__registerbutton {
+    padding: 0.5em 2em;
+    margin-top: 2em;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    background-color: #545BE8;
+}
+
+/* CARD */
+.course__card {
+    width: 250px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 7px;
+    overflow: hidden;
+    box-shadow: 2px 2px 10px rgb(134, 134, 134);
+    margin: 0 3em 3em 0;
+}
+
+.course__card-img {
+    width: inherit;
+    flex: 2;
+    position: relative;
+}
+
+.course__card-label {
+    position: absolute;
+    z-index: 2;
+    top: 10px;
+    color: white;
+    background-color: #545BE8;
+    padding: 0.2em 0.4em;
+    border-radius: 5px;
+}
+
+.course__card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    box-shadow: inset 10px 10px 50px #000;
+}
+
+.course__card-price {
+    position: absolute;
+    z-index: 3;
+    bottom: 6px;
+    right: 12px;
+    color: white;
+    font-weight: 700;
+}
+
+.course__card-content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    text-align: start;
+    padding: 1em 0 0 1em;
+}
+
+.course__card-title {
+    font-size: 19px;
+    font-weight: 700;
+}
+
+.course__card-info {
+    font-size: 15px;
+}
+
+.app__testimonials {
+    display: flex;
+    flex-direction: column;
+    padding: 0em 6em;
+}
+
+.app__testi-title {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 1.2em;
+}
+
+.app__testi-items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.app__testi-item {
+    width: 39vw;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    padding: 1em 2em;
+    box-shadow: 2px 2px 10px rgb(134, 134, 134);
+}
+
+.customer__info {
+    display: flex;
+}
+
+.customer__info img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.customer__basicinfo {
+    margin-left: 15px;
+}
+
+.customer__name {
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.customer__role {
+    font-size: 12px;
+}
+
+.customer__stars svg {
+    color: rgb(255, 230, 0);
+    margin-right: 0.5em;
+}
+
+.customer__comment {
+    margin-top: 1em;
+}
