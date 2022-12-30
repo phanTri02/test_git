@@ -28,9 +28,9 @@ const Homepage = () => {
                 </Row>
                 <Row>
                     <div className='card__container'>
-                        <div>
-                            <h1>Thông tin thống kê của trung tâm</h1>
-                            <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate aliquam aliquid asperiores accusantium iste optio minima doloribus repellendus voluptatem, non possimus quo porro aperiam quibusdam? Tempora iusto pariatur laboriosam iure!</h4>
+                        <div className='card__container-info'>
+                            <h1 className='card__container-title'>Thông tin thống kê của trung tâm</h1>
+                            <h4 className='card__container-desc'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate aliquam aliquid asperiores accusantium iste optio minima doloribus repellendus voluptatem, non possimus quo porro aperiam quibusdam? Tempora iusto pariatur laboriosam iure!</h4>
                         </div>
                         <div className='card__group'>
                             <div className="card__detail">
